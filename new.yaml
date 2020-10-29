@@ -13,11 +13,11 @@ points:
           stagger: -4.75
         inner:
           stagger: -4.75
-        innerext:
       rows:
         bottom:
         home:
         top:
+        topnr:
     thumbs:
       anchor:
         ref: main_inner_bottom
@@ -34,4 +34,4 @@ points:
 
   mirror:
     ref: main_inner_top
-    distance: 78
+    distance: 48
