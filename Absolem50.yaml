@@ -1,0 +1,125 @@
+points:
+  zones:
+    matrix:
+      anchor:
+        rotate: 5
+      columns:
+        outer:
+          rows:
+            home:
+              bind: [,15,-1]
+            top:
+              bind: [,15,-1]
+            num:
+              bind: [,15,-1]
+        pinky:
+          stagger: 2
+          rows:
+            bottom:
+              bind: [,,,10]
+            home:
+              bind: [,10]
+            top:
+              bind: [,10]
+            num:
+              bind: [,10]
+        ring:
+          rotate: -5
+          # hinge at the bottom right corner
+          # of the bottom pinky's 14x14 hole
+          # for historical reasons...
+          origin: [-12, -19]
+          stagger: 12
+          rows:
+            bottom:
+              bind: [,,,10]
+            home:
+              bind: [,10]
+            top:
+              bind: [,10]
+            num:
+              bind: [,10]
+        middle:
+          stagger: 5
+          rows:
+            bottom:
+              bind: [,10,,10]
+            home:
+              bind: [,10,,10]
+            top:
+            num:
+        index:
+          stagger: -6
+          rows:
+            bottom:
+              bind: [,10]
+            home:
+              bind: [,,,10]
+            top:
+              bind: [,,,10]
+            num:
+              bind: [,,,10]
+        inner:
+          stagger: -2
+          rows:
+            bottom:
+              bind: [,,10,]
+            home:
+              bind: [,,,10]
+            top:
+              bind: [,,,10]
+            num:
+              bind: [,,,10]
+      rows:
+        bottom:
+          bind: [10]
+        home:
+          bind: [10]
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-7, -19]
+      columns:
+        near:
+          key:
+            skip: true
+        home:
+          spread: 21.25
+          rotate: -28
+          origin: [-11.75, -9]
+          rows:
+            thumb:
+              bind: [,10,,15]
+    unifar:
+      anchor:
+        ref: thumbfan_home_thumb
+      columns:
+        home_again:
+          key:
+            skip: true
+        far:
+          rotate: -28
+          origin: [-9.5, -9]
+          rows:
+            thumb:
+              bind: [-1,,,5]
+    uninear:
+      anchor:
+        ref: thumbfan_home_thumb
+      columns:
+        home_again:
+          key:
+            skip: true
+        near:
+          spread: -19
+          rotate: 28
+          origin: [9.5, -9]
+          rows:
+            thumb:
+              bind: [10,5,,]
+  key:
+    bind: [0,0,0,0]
+  rotate: -20
+  mirror:
+    ref: matrix_pinky_home
+    distance: 223.7529778
