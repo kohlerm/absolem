@@ -1,0 +1,37 @@
+points:
+  zones:
+    main:
+      rotate: -20
+      columns:
+        pinkyext:
+        pinky:
+        ring:
+          stagger: 14.25
+        middle:
+          stagger: 4.75
+        index:
+          stagger: -4.75
+        inner:
+          stagger: -4.75
+        innerext:
+      rows:
+        bottom:
+        home:
+        top:
+    thumbs:
+      anchor:
+        ref: main_inner_bottom
+        shift: [-9.5,-20]
+        rotate: -15
+      columns:
+        near:
+        home:
+          rotate: -15
+          origin: [-9.5,-9.5]
+        far:
+          rotate: -15
+          origin: [-9.5,-9.5]
+
+  mirror:
+    ref: main_inner_top
+    distance: 78
